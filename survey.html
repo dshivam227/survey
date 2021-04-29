@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div>
+        <header class="head">
+
+
+            <h1>Survey Form</h1>
+            <p>Thank you for taking time to help us improve the platform</p>
+        </header>
+    </div>
+    <form action="formtag">
+        <div class="nam">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name">
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+
+        </div>
+        <div class="form-age">
+            <label for="age"> Age <span></span> (optional)</label>
+            <input type="number" name="age" id="age" min="10" max="60" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>Which option best describe your present role?</p>
+            <select name="" id="dropdown" required>
+                <option disabled selected value="">Select Current Value</option>
+                <option value="student">Student </option>
+                <option value="student">Full- time Job</option>
+                <option value="student">Part- time Job</option>
+                <option value="student">Prefer not to say</option>
+                <option value="student">Other</option>
+
+            </select>
+
+        </div>
+        <div>
+            <p>Would you recommend my website to a friend?</p>
+            <label><input type="radio" name="friend"> definitely</label>
+            <label><input type="radio" name="friend">May be</label>
+            <label><input type="radio" name="friend">Not Sure</label>
+        </div>
+        <div>
+            <p>What is your favorite feature?</p>
+            <select name="feature" id="dropdown">
+                <option disabled selected value="">Select an option</option>
+                <option value="Challenge">Challenge</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+
+            </select>
+        </div>
+        <div>
+            <p> What would you like to see improved? <span>(Check all that apply)</span></p>
+            <label><input type="checkbox"> Front-end development</label> <br>
+            <label><input type="checkbox"> back-end development</label><br>
+            <label><input type="checkbox"> Data visualisation</label><br>
+            <label><input type="checkbox"> Front-end development</label><br>
+            <label><input type="checkbox"> Challenges</label><br>
+            <label><input type="checkbox"> Open Source Community</label><br>
+            <label><input type="checkbox">Gitter help room </label>
+
+
+        </div>
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea name="suggestions" id="suggestions" cols="40" rows="10"
+                placeholder="Enter your suggestions"></textarea>
+        </div>
+        <section>
+            <button id="submit">Submit</button>
+        </section>
+    </form>
+</body>
+
+</html>
